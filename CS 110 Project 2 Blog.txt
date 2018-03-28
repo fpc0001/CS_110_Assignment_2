@@ -1,0 +1,97 @@
+Francesco P. Cassarino
+CS 110 Assignment 2: Data Analysis of r/TheDonald sub-reddit
+Blog Report
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Files:
+
+Java Files: RedditReader.java ; RedditTester.java
+Text Files: RedditPost.txt ; RedditAuthors.txt ; RedditScore.txt ; RedditNumComments.txt ; RedditDate.txt
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Purpose of Project: 
+
+To analyze given data from r/TheDonald sub-reddit. 
+Using the given data for each post the following was used: Post title, author, score, number of comments, and date.
+For each data set (title, author, score, number of comments, date) a seperate text file was created.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+File Information:
+
+The RedditReader.java file contained the methods and constructors to execute the RedditTester.java file.
+The RedditTester.java file took all neccesssary user input and called the methods from RedditReader.java.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Executing Files and User Input:
+
+Executing the RedditTester.java file allowed for the user to analyze the data set using keyword searches.
+For each search the results of the search are printed to a text file. The user enters the name of this file. The text file goes to the same directory as the project.
+The first option allows the user to seach each post for a single keyword. If the post contained the keyword information regarding that post was printed to a text file.
+The second option allows for a two keyword search.
+Finally, the third options allows for a three keyword seach.
+
+For both the two and three keyword search the user selects to conduct a logical OR search or a logical AND search.
+Logical OR: if any of the entered keywords exist in the post then the program will print output to the desired text file.
+Logical AND: if all of the entered keywords exist in the post then the program will print output to the desired test file.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Output to text file:
+
+[BEGIN OUTPUT]
+
+		Importing: RedditPost.txt
+		Success!
+		Ready to Buffer: RedditPost.txt
+
+		RedditPost.txt Buffered Successfully!
+		
+		Detected: (keyword)
+		Line#: (post)
+		Line: # Instance Number: #
+		Author: (author)
+		Date: YYYY-MM-DD | EPOCH
+		Number of Comments: #
+		Score: #
+
+		Number of lines containing keyword: #
+		Line numbers containing keyword:
+		(list of line numbers)
+		.
+		.
+		.
+		List of Authors who's post contain keyword:
+		(list of authors)
+		.
+		.
+		.
+		List of Dates (YYYY-MM-DD | Epoch)for posts containing keyword:
+		(list of dates)
+		.
+		.
+		.
+		List of number of comments for lines containing keyword:
+		(list of number of comments)
+		.
+		.
+		.
+		List of Score for lines containing keyword:
+		(list of Scores)
+		.
+		.
+		.
+		
+[END OUTPUT]
+
+All posts were first sorted by descending score. The list of line numbers, authors, dates, comments, and scores all correspond to each other.
+ex the 3rd line correspondes to the 3rd author, 3rd date, 3rd number of comments, and 3rd score.
+This is why the authors, dates, and number of comments are not sorted in any way.
+
+This approach allows the user to conduct their own analysis based on the keyword searches they conducted by simply looking through the lists.
+If the user prefers they can copy and paste each list to its own text file or run the same search multiple times and save it to different text files.
+This would allow for side by side viewing of each list and potentially easier viewing.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Future Improvements:
+	This program could be improved by allowing the user to use any text files they would like to analyze.
+	Allowing by sorting of other than descending score.
+	Allowing for individual text files for lists of each data type.
